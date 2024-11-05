@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <title>Dev Dish Food Truck & Restaurant</title>
     <style>
-        /* CSS code goes here */
+        /* Existing CSS */
         * {
             margin: 0;
             padding: 0;
@@ -57,7 +58,14 @@
         }
 
         .hero-image h1 {
-            font-size: 3.5vw;
+            font-size: 4vw;
+            /* Updated */
+            font-weight: 700;
+            /* Updated */
+            color: #e67e22;
+            /* Updated */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            /* Updated */
             margin: 1vh 0;
         }
 
@@ -82,13 +90,21 @@
         }
 
         .content-section {
+            text-align: center;
             padding: 20px;
             margin: 20px;
             background-color: rgba(255, 255, 255, 0.8);
         }
 
+        .content-section img {
+            max-width: 80%;
+            max-height: 60vh;
+            display: block;
+            justify-content: center;
+            margin: 2vh auto;
+        }
+
         #menu h2 {
-            text-align: center;
             width: 800px;
             margin: 0 auto;
         }
@@ -104,21 +120,51 @@
             margin-bottom: 15px;
         }
 
+        /* Updated Heading Styles */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Roboto Slab', serif;
+            color: #2c3e50;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            /* Already updated in .hero-image h1 */
+        }
+
         h2 {
-            font-size: 2.5vw;
-            color: #333;
-            margin-bottom: 10px;
+            font-size: 3vw;
+            /* Updated */
+            color: #34495e;
+            /* Updated */
+            margin-bottom: 0.5em;
+            /* Updated */
+            text-align: center;
         }
 
         h3 {
-            font-size: 2.25vw;
-            color: #444;
+            font-size: 2.5vw;
+            /* Updated */
+            color: #16a085;
+            /* Updated */
+            text-decoration: none;
+            /* Updated */
+            margin-bottom: 0.25em;
+            /* Updated */
             text-decoration: underline;
         }
 
         h4 {
-            font-size: 1.5vw;
-            color: #444;
+            font-size: 1.75vw;
+            /* Updated */
+            color: #2980b9;
+            /* Updated */
+            margin-bottom: 0em;
+            /* Updated */
+            font-weight: 600;
+            /* Updated */
         }
 
         /* Footer Styling */
@@ -177,6 +223,7 @@
             <p>Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared
                 love for innovative cuisine. With a background in software development and a knack for culinary
                 creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.</p>
+            <p><img src="./assets/images/pexels-edwardeyer-1247755.jpg" alt="A server placing burgers on a bar."></p>
         </section>
 
         <!-- Menu Section -->
