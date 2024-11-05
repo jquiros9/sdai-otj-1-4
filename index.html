@@ -18,22 +18,23 @@
             line-height: 1.6;
         }
 
+        /* Navbar Styling */
         .navbar {
             display: flex;
             justify-content: center;
             background-color: #333;
-            padding: 10px;
-            /* Reduced padding */
+            padding: 1vh;
+            font-size: 2vw;
         }
 
         .nav-item {
-            margin: 0 15px;
+            margin: 0 1vw;
         }
 
         .nav-item a {
             color: #fff;
             text-decoration: none;
-            padding: 8px 16px;
+            padding: 0.5vh 0.5vw;
             background-color: #444;
             border-radius: 5px;
             transition: background-color 0.3s;
@@ -43,56 +44,37 @@
             background-color: #555;
         }
 
+        /* Hero Section Styling */
         .hero-image {
             text-align: center;
             background-color: #f4f4f4;
-            height: 100vh;
+            height: 95vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-bottom: 5vh;
         }
 
         .hero-image h1 {
-            font-size: 2.5em;
-            margin: 20px 0;
-            /* Space above and below the heading */
+            font-size: 3.5vw;
+            margin: 1vh 0;
         }
 
-        /* Image responsive adjustments */
         .hero-image img {
             max-width: 80%;
+            max-height: 60vh;
             display: block;
             margin: 0 auto;
         }
 
-        /* Dynamic max-height for the image for different screen sizes */
-        @media (min-width: 1200px) {
-            .hero-image img {
-                max-height: 75vh;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 1199px) {
-            .hero-image img {
-                max-height: 60vh;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .hero-image img {
-                max-height: 50vh;
-            }
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+        /* Padding between sections */
+        .section-padding {
+            padding-top: 20vh;
         }
 
         .content-with-background {
             background-image: url('./assets/images/pexels-edwardeyer-1247755.jpg');
-            /* Replace with your image path */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -103,24 +85,48 @@
             padding: 20px;
             margin: 20px;
             background-color: rgba(255, 255, 255, 0.8);
-            /* White with slight transparency */
+        }
+
+        #menu h2 {
+            text-align: center;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Menu Categories and Items */
+        .menu-category {
+            font-size: 2vh;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            font-size: 2vh;
+            margin-bottom: 15px;
         }
 
         h2 {
+            font-size: 2.5vw;
             color: #333;
             margin-bottom: 10px;
         }
 
-        ul {
-            list-style-type: none;
+        h3 {
+            font-size: 2.25vw;
+            color: #444;
+            text-decoration: underline;
         }
 
+        h4 {
+            font-size: 1.5vw;
+            color: #444;
+        }
+
+        /* Footer Styling */
         footer {
             text-align: center;
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
-            margin-top: 20px;
+            padding: 2vh 0;
         }
 
         footer ul {
@@ -129,7 +135,7 @@
         }
 
         footer ul li {
-            margin: 0 10px;
+            margin: 0 1vw;
         }
 
         footer ul li a {
@@ -142,102 +148,138 @@
 
 <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <nav class="navbar">
         <div class="nav-item"><a href="#about-us">ABOUT US</a></div>
         <div class="nav-item"><a href="#menu">MENU</a></div>
         <div class="nav-item"><a href="#dev-favorites">DEV FAVORITES</a></div>
         <div class="nav-item"><a href="#location">LOCATIONS</a></div>
         <div class="nav-item"><a href="#hours">HOURS</a></div>
-    </div>
+    </nav>
 
     <!-- Hero Image Section -->
-    <div class="hero-image" id="hero-image">
+    <section class="hero-image" id="hero-image">
         <h1>Dev Dish Food Truck & Restaurant</h1>
         <img src="./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg"
-            alt="A street food truck with a dark exterior in an urban setting. Two people stand at the counter, one masked, as the vendor serves. The truck is decorated with festive lights, and a 'Street Food' sign is visible in the background.">
-    </div>
+            alt="A street food truck in an urban setting.">
+    </section>
 
     <!-- Content with Background -->
-    <div class="content-with-background">
+    <div class="content-with-background section-padding">
         <!-- About Us Section -->
-        <div class="content-section about-us" id="about-us">
+        <section class="content-section" id="about-us">
             <h2>About Us</h2>
             <p>What's so great about combining the worlds of coding and cuisine? Dev Dish was founded by two passionate
                 developers who turned their love for software into a culinary adventure. After years of coding by day
-                and
-                cooking by night, they decided to merge their two passions and create something extraordinary.</p>
+                and cooking by night, they decided to merge their two passions and create something extraordinary.</p>
             <p>Dev Dish brings a unique twist to the food truck scene, offering a menu full of creative, tech-inspired
                 dishes. Whether you're a tech enthusiast or a food lover, our offerings are designed to satisfy both
-                your
-                appetite and your curiosity.</p>
+                your appetite and your curiosity.</p>
             <p>Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared
-                love
-                for innovative cuisine. With a background in software development and a knack for culinary creativity,
-                they
-                embarked on a journey to deliver delicious, tech-themed dishes to the community.</p>
-        </div>
+                love for innovative cuisine. With a background in software development and a knack for culinary
+                creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.</p>
+        </section>
 
         <!-- Menu Section -->
-        <div class="content-section menu" id="menu">
+        <section class="content-section" id="menu">
             <h2>The Dev Dish Quarterly Menu</h2>
-            <h3>Wraps</h3>
-            <ul>
-                <li><strong>Function Fries:</strong> Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue
-                    cheese
-                </li>
-                <li><strong>Loop Wrap:</strong> Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata
-                    olives,
-                    feta cheese, tzatziki sauce</li>
-                <li><strong>Stack Overflow:</strong> Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado
-                </li>
-                <li><strong>Recursive Roll:</strong> Smoked salmon, cream cheese, cucumber, dill, and baby spinach</li>
-                <li><strong>Binary Bites:</strong> Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno
-                    chiles,
-                    mayonnaise</li>
-                <li><strong>Git Wrap:</strong> Vegetarian. Falafel, red onion, romaine lettuce, tomato, and tzatziki
-                    sauce
-                </li>
-            </ul>
-            <p><em>Note: All wraps, except Stack Overflow, are served on your choice of flour or corn tortilla.</em></p>
 
-            <h3>Sides</h3>
-            <ul>
-                <li><strong>Bug-Free Fries:</strong> Just a side of fries</li>
-                <li><strong>Three-Layer Cheese Fries:</strong> Fries topped with havarti and dill cheese, pastrami,
-                    Russian
-                    dressing, pickled onions and peppers, pickled jalapeno</li>
-                <li><strong>Golden Ratio Fries:</strong> Fries topped with havarti and dill cheese, pastrami, Russian
-                    dressing, pickled onions and peppers, pickled jalapeno</li>
-                <li><strong>Compile Chips:</strong> Tortilla chips and salsa verde</li>
-            </ul>
-        </div>
+            <!-- Wraps Section -->
+            <div class="menu-category">
+                <h3>Wraps</h3>
+
+                <div class="menu-item">
+                    <h4>Function Fries</h4>
+                    <p>Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Loop Wrap</h4>
+                    <p>Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki
+                        sauce</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Stack Overflow</h4>
+                    <p>Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Recursive Roll</h4>
+                    <p>Smoked salmon, cream cheese, cucumber, dill, and baby spinach</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Binary Bites</h4>
+                    <p>Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Git Wrap</h4>
+                    <p>Vegetarian. Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</p>
+                </div>
+
+                <p><em>Note: All wraps, except Stack Overflow, are served on your choice of flour or corn tortilla.</em>
+                </p>
+            </div>
+
+            <!-- Sides Section -->
+            <div class="menu-category">
+                <h3>Sides</h3>
+
+                <div class="menu-item">
+                    <h4>Bug-Free Fries</h4>
+                    <p>Just a side of fries</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Three-Layer Cheese Fries</h4>
+                    <p>Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and
+                        peppers, pickled jalapeno</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Golden Ratio Fries</h4>
+                    <p>Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and
+                        peppers, pickled jalapeno</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Compile Chips</h4>
+                    <p>Tortilla chips and salsa verde</p>
+                </div>
+            </div>
+        </section>
 
         <!-- Developer's Favorites Section -->
-        <div class="content-section dev-favorites" id="dev-favorites">
+        <section class="content-section" id="dev-favorites">
             <h2>The Developer's Favorites</h2>
             <p>Enjoy Dev Dish fan favorite menu items at local events or book us for a visit to your neighborhood or for
                 your special occasion.</p>
-        </div>
+        </section>
 
         <!-- Location Section -->
-        <div class="content-section location" id="location">
+        <section class="content-section" id="location">
             <h2>Location</h2>
-            <p>511 Tristin Isle Park, Hudsonton, Michigan</p>
-        </div>
+            <dl>
+                <dt>Address:</dt>
+                <dd>511 Tristin Isle Park, Hudsonton, Michigan</dd>
+            </dl>
+        </section>
 
         <!-- Hours Section -->
-        <div class="content-section hours" id="hours">
+        <section class="content-section" id="hours">
             <h2>Hours</h2>
-            <ul>
-                <li><span>Monday:</span> <span>10am-7pm</span></li>
-                <li><span>Tuesday:</span> <span>10am-7pm</span></li>
-                <li><span>Wednesday:</span> <span>10am-7pm</span></li>
-                <li><span>Thursday:</span> <span>10am-10pm</span></li>
-                <li><span>Friday:</span> <span>10am-9pm</span></li>
-                <li><span>Saturday:</span> <span>12pm-11pm</span></li>
-                <li><span>Sunday:</span> <span>12pm-11pm</span></li>
-            </ul>
-        </div>
+            <dl>
+                <dt>Monday - Wednesday:</dt>
+                <dd>10am - 7pm</dd>
+                <dt>Thursday:</dt>
+                <dd>10am - 10pm</dd>
+                <dt>Friday:</dt>
+                <dd>10am - 9pm</dd>
+                <dt>Saturday - Sunday:</dt>
+                <dd>12pm - 11pm</dd>
+            </dl>
+        </section>
     </div>
 
     <!-- Footer -->
