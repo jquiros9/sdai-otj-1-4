@@ -120,6 +120,37 @@
             margin-bottom: 15px;
         }
 
+        /* Styling for the Developer's Favorites gallery */
+        .favorites-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .favorite-item {
+            width: auto;
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            object-fit: contain;
+        }
+
+        .favorite-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Container for each image and heading */
+        .favorite-item-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 30%;
+        }
+
+
         /* Updated Heading Styles */
         h1,
         h2,
@@ -302,6 +333,28 @@
             <h2>The Developer's Favorites</h2>
             <p>Enjoy Dev Dish fan favorite menu items at local events or book us for a visit to your neighborhood or for
                 your special occasion.</p>
+            <div class="favorites-gallery">
+                <div class="favorite-item-container">
+                    <img class="favorite-item"
+                        src="https://www.plantpowercouple.com/wp-content/uploads/2022/07/healthy-mediterranean-hummus-wrap3-735x1103.jpg"
+                        alt="Loop Wrap">
+                    <h3>Loop Wrap</h3>
+                </div>
+
+                <div class="favorite-item-container">
+                    <img class="favorite-item"
+                        src="https://www.ambitiouskitchen.com/wp-content/uploads/2019/04/salmonpinwheels-12.jpg"
+                        alt="Recursive Roll">
+                    <h3>Recursive Roll</h3>
+                </div>
+
+                <div class="favorite-item-container">
+                    <img class="favorite-item"
+                        src="https://allourway.com/wp-content/uploads/2022/07/Loaded-Fries-38-copy.jpg-1200-x-1800.jpg"
+                        alt="Three-Layer Cheese Fries">
+                    <h3>Three-Layer Cheese Fries</h3>
+                </div>
+            </div>
         </section>
 
         <!-- Location Section -->
